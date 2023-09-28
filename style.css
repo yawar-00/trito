@@ -1,0 +1,773 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&family=Montserrat&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    padding:0px
+}
+.nav li img{
+    width: 120px;
+    height: 40px;
+    margin-right: 230px;
+}
+.nav li a{
+
+    margin: 20px;
+    text-decoration: none;
+    color: #24315e;
+}
+.nav li a:hover {
+    color: #ff4612;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    margin: 0;
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+.button{
+    text-decoration: none;
+     margin-left: 200px;
+     padding: 13px 30px 13px 30px;
+     background-color: #24315e;
+     color: white;
+    
+ } 
+ .button:hover {
+     background-color: white;
+     color: #24315e;
+ }
+.hero_sec{
+    background-image: url(./1.jpg);
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;  
+    justify-content: space-evenly; 
+}
+.info{
+    margin-top: 200px;
+    color: #24315e;
+}
+.info h3{
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+.info h1{
+    font-size: 50px;
+    margin: 0;
+}
+.info p{
+    font-size: 20px;
+    margin-top: 0;
+}
+.info2{
+    display: flex;
+}
+.button1{
+    text-decoration: none;
+    margin-top: 20px;
+    padding:10px 30px 10px 30px ;
+    background-color: white;
+    color: #24315e;
+    border: solid 2px #24315e;
+}
+.button1:hover{
+    background-color: #24315e;
+    color: white;
+}
+.work{
+    margin-left: 20px;
+    color: #24315e;
+}
+.work:hover{
+    text-decoration: none;
+}
+.quoet{
+    max-width: 420px;
+    margin-top: 180px;
+}
+.pic {
+    background-image: url(avatar.png);
+    background-size: cover;
+    height: 500px;
+    width: 460px;
+    margin-top: 200px ;
+}
+@media (max-width:413px){
+    .pic{
+        display: none;
+    }
+    .info{
+        margin-left: 20px;
+    }
+    .info p{
+        font-size: 15px;
+    }
+}
+/* My Skills */
+.client_top{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(2, 2, 32);
+    font-size: 30px;
+    padding-top: 30px;
+    color: white;
+    margin-top: -4px;
+}
+
+.myskill{
+    background-color: rgb(2, 2, 32);
+    padding: 30px;
+}
+.client_bottom {
+    display: flex;
+    justify-content: center;
+   
+}
+.client_bottom img{
+    margin: 30px;
+    opacity: 0.5;
+}
+.client_bottom img:hover{
+    opacity: 0.8;
+}
+@media(max-width:413px){
+    .client_top{
+        font-size: 16px;
+        margin-left: -20px;
+        padding-top: 20px;
+        color: white;
+        width: max-content;
+    }
+    .client_bottom img{
+        margin: 25px 10px 20px 10px;
+        width: 60%;
+        opacity: 0.5;
+    }
+}
+/* Dedication */
+.dedication{
+    margin: 60px;
+    display: flex;
+}
+.dedication div{
+    padding: 30px;
+    border-right: 2px solid rgb(116, 111, 111);
+}
+.dedication div img{
+    height: 50px;
+
+}
+.dedication div span{
+    font-size: 30px;
+    font-weight: 600;
+    color: #24315e;
+}
+.dedication div div{
+    border: none;
+    color: #24315ec7 ;
+}
+@media(max-width:413px){
+    .dedication{
+        margin: 30px 0 30px 0;
+        display: block;
+        padding: 0;
+    }
+    .dedication div{
+        padding: 15px;
+        border-right: none;
+    }
+    .dedication div img{
+        height: 35px;
+    
+    }
+    .dedication div span{
+        font-size: 20px;
+        font-weight: 900;
+    }
+    .dedication div div{
+        font-size: 12px;
+    }
+}
+/* =======Dedication end====== */
+/* ========Main skill*/
+.skillmain{
+    display: flex;
+    padding: 0 170px 0 170px;
+    margin-top:150px ;
+}
+.skill1{
+    width: 40%;
+    margin-left: 70px;
+    padding-right: 100px;
+    margin-top: 50px;
+}
+.skill1 h1{
+    color: #24315e; 
+    font-size: 50px;
+}
+.skill2{   
+    padding: 100px 110px 75px 150px;
+    background-image: url('https://itemsstore.net/html/trito/img/skills/1.jpg');
+    background-size: cover;
+}
+
+
+.skill2 ul{
+    list-style-type: none;
+}
+.skill2 li{
+    margin: 0 20px 25px 0;
+    display: inline-block;
+    background-color: #fff;
+    border: 2px solid #24315e;
+    padding: 10px 30px
+}
+@media(max-width : 413px){
+    .skillmain{
+        display: block;
+        padding: 0px 0px 0px 0px;
+        margin: 0;
+    }
+    .skill1{
+        padding-right: 10px;
+        margin-left: 20px;
+        width: 90%;
+        margin-bottom: 50px;
+    }
+    .skill1 div{
+        padding: 0px;
+    }
+    .skill1 h1{
+        width: 85%;
+        font-size: 22px;
+    }
+    .skill2{
+     
+        padding: 50px 0px 50px 0px;
+        margin: 5px;
+    }
+    .skill2 ul{
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 15%;
+    }
+    .skill2 li{
+        margin: 0 10px 15px 0;
+        display: inline-block;
+        background-color: #fff;
+        border: 1px solid #24315e;
+        padding: 10px 20px
+    }
+}
+/* =======Main Skill end========== */
+
+/* ========Source======== */
+.source{
+    display : flex;
+    justify-content: space-evenly;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.source div{
+    display : flex;
+    align-items: center;
+}
+
+.big{
+    font-size: 60px;
+    font-weight: 500;
+    text-decoration: underline;
+    color: #24315e;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.source div span{
+    font-size: 22px;
+    margin-left: 20px;
+    color: #2e4f7ed8;
+}
+@media(max-width:413px){
+    .source{
+        margin-top:50px;
+        display : block;
+    }
+    .source div{
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .big{
+        font-size: 50px;
+        text-decoration: underline;
+    }
+    .source div span{
+        font-size: 16px;
+        margin-left: 20px;
+        color: #2e4f7ed8;
+    }
+}
+/*  =========About=======*/
+.pos{
+    display: flex;
+    align-items: center;
+    border: 2px solid #24315e;
+    width: 220px;
+    background-color: white;
+    padding : 20px 30px 17px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    top: 630px;
+    left :220px;
+}
+.pos1{
+    font-size: 50px; 
+    color: orangered;
+    margin-right: 20px;
+}
+.about{
+    background-image: url('https://itemsstore.net/html/trito/img/about/background.jpg');
+    background-size: cover;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+.about1{
+    margin-top: 140px;
+    margin-right: 100px;
+}
+.about2{
+    margin-top: 200px;
+}
+.about2 h1{
+    color: #24315e; 
+    font-size: 50px;
+}
+.button2{
+   
+     text-decoration: none;
+     padding: 20px 35px 20px 35px;
+     background-color: #24315e;
+     color: white;
+
+ } 
+ .button2:hover {
+     background-color: white;
+     color: #24315e;
+ }
+ @media (max-width:413px) {
+    .pos{
+        width: 110px;
+        background-color: white;
+        padding : 10px 20px 7px;
+        font-size: 10px;
+        top: 260px;
+        left :20px;
+    }
+    .pos1{
+        font-size: 25px; 
+        color: orangered;
+        margin-right: 10px;
+    }
+    .about{
+        display: block;
+        margin-top: -100px;
+        padding-bottom:70px ;
+    }
+    .about1{
+        margin-top: 70px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }  
+    .about1 img{
+        width: 100%;
+    }
+    .about2{
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    .about2 h1{
+        font-size: 25px;
+    }
+    .about2 div p{
+        font-size: 14px;
+    }
+    .button2{
+        padding: 12px 20px 12px 20px;
+        font-size: 14px;
+    }
+ }
+/* portfolio */
+.image51 {
+    border: 2px solid black;
+    width: 50%;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.image51 img:hover {
+    scale: 1.2;
+    transition: scale 1s;
+}
+.mainimages {
+    display: flex;
+}
+
+.image52 {
+    border: 2px solid black;
+    width: 33%;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.image52 img:hover {
+    scale: 1.2;
+    transition: scale 1s;
+}
+
+@media(max-width:413px) {
+    .mainimages {
+        display: block;
+    }
+
+    .image51 {
+        border: 2px solid black;
+        width: 100%;
+        overflow: hidden;
+        margin: 10px 0 10px 0;
+    }
+
+    .image52 {
+        border: 2px solid black;
+        width: 100%;
+        overflow: hidden;
+        margin: 10px 0 10px 0;
+    }
+
+    .image52 img:hover {
+        scale: 1.2;
+        transition: scale 1s;
+    }
+}
+
+
+/* FAQ */
+.faq_hed{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+.faq_hed h1{
+    color: #24315e;
+    font-size: 50px;
+    margin-top: -10px;
+}
+.label{
+    padding: 2px 10px;
+    background-color: rgb(35, 207, 170);
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 2px;
+    float: right;
+}
+.faq{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 25px;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 5px;
+    background-color: #24315e;
+    color: white;
+  
+}
+.faq1{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding: 25px;
+    background-color: #24315e;
+    color: rgb(170, 165, 165);
+    z-index: -1;
+    border-radius: 5px;
+    position: relative;
+    margin-top: -100px;
+}
+#check1:checked~ .faq1_1{
+    margin-top: 20px;
+    transition: margin-top 2s;
+}
+#check2:checked~ .faq1_2{
+    margin-top: 20px;
+    transition: margin-top 2s;
+}
+#check3:checked~ .faq1_3{
+    margin-top: 20px;
+    transition: margin-top 2s;
+}
+#check4:checked~ .faq1_4{
+    margin-top: 20px;
+    transition: margin-top 2s;
+}
+#check5:checked~ .faq1_5{
+    margin-top: 20px;
+    transition: margin-top 2s;
+}
+@media (max-width:413px){
+    .faq_hed h1{
+        font-size: 32px;
+    }
+
+    .faq{
+        width: 80%;
+        font-size: 23px;
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+      
+    }
+    .faq1{
+  
+        width: 80%;
+        font-size: 12px;
+        border-radius: 2px;
+        margin-bottom:20px;
+        margin-top: -120px;
+        
+    }      
+}
+/* =======FAQ end========= */
+/* Contact */
+.con{
+    margin-top: 100px;
+    padding: 110px;
+    text-align: center;
+    background-image: url('./1.jpg');
+    background-size: cover;
+}
+.con p{
+    margin-top: -10px;
+    padding: 10px;
+    font-size: 55px;
+    font-weight: 700;
+    color: #24315e;
+}
+@media (max-width:413px){
+    .con{
+        margin-top: 40x;
+        padding: 80px 40px 80px 40px;
+    }
+    .con p{
+        font-size: 20px;
+    }
+    .con .button1{
+        font-size: 12px;
+        padding:10px 20px 10px 20px;
+    }
+}
+/* =====Contact end======= */
+.news_hed h3{
+    margin-top: 150px;
+    margin-left: 200px;
+    color: #ff4612;
+}
+.news_hed h1{
+    margin-left: 200px;
+    margin-top: -1px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #24315e;
+}
+.news_con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 200px 0 200px;
+}
+.box{
+    width: 33.3%;
+    margin: 0 20px 0 20px;
+}
+.news_image{
+    border: 2px solid black;
+    border-radius: 46%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 30px;
+    
+}
+.news_image img:hover{
+    scale: 1.1;
+    transition: scale 1s;
+}
+.box a{
+    text-decoration: none;
+    color: #24315e;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+@media(max-width:413px){
+    .news_hed h3{
+        margin-top: 50px;
+        margin-left: 20px;
+        font-size: 15px;
+    }
+    .news_hed h1{
+        margin-left: 20px;
+        margin-top: -1px;
+        font-size: 23px;
+    }
+    .news_con{
+        display: block;
+        padding: 0px;
+    }
+    .box{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .box a{
+        font-size: 14px;
+    }
+    .box h5{
+        margin-top: -3px;
+        font-size: 12px;
+    }
+}
+/* news end */
+/* Form */
+.main_con{
+    background-image: url('https://itemsstore.net/html/trito/img/contact/background.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.form1{
+    width: 500px;
+    margin-right: 30px;
+}
+.form1 h1{
+    margin-top: -5px;
+    font-size: 50px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.form1 a{
+    font-size: 30px;
+    color: #ffffff;
+}
+.picture{
+    margin-left: -15px;
+    margin-top: 100px ;
+    width: 95%;
+    float: left;
+    padding: 30px 0px 10px 60px;
+    background-color: rgba(255,255,255,.1);
+    color: #ffffff;
+}
+.form2{
+    background-color: #ffffff;
+    padding: 55px 50px 50px;
+}
+.input{
+    color: #24315e;
+    border: 2px solid #24315e;
+    margin: 10px;
+    padding: 20px 20px 20px 40px;
+    width: 350px;
+    font-size: 20px;
+}
+.form2 button{
+    color: #24315e;
+    background-color: rgb(13, 210, 170);
+    border: 2px solid #24315e;
+    margin-left: 10px;
+    padding: 13px;
+    width: 415px;
+    font-size: 15px;
+}
+#logos {
+    font-size: 30px;
+    color: white;
+    background-color: rgb(15, 15, 52);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 50%;
+}
+.form2 div{
+    margin: 20px 0 20px 0;
+}
+@media(max-width:413px){
+    .main_con{
+        margin-top: 100px;
+        display: block;
+        padding-top: 40px;
+    }
+    .form1{
+        width: 90%;
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+    .form1 h3{
+        font-size: 12px;
+    }
+    .form1 h1{
+        margin-top: -5px;
+        font-size: 25px;
+    }
+    .form1 a{
+        font-size: 20px;
+    }
+    .picture{
+        margin-left: -5px;
+        margin-top: 50px ;
+        font-size: 10px;
+        padding: 30px 10px 10px 10px;
+        float: none;
+    }  
+    .picture img{
+        height: 40px;
+    }
+    .form2{
+        background-color: #ffffff;
+        padding: 25px 15px 15px 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .input{
+        margin: 10px 0px 10px 0px;
+        padding: 10px 12px 10px 15px;
+        width: 90%;
+        font-size: 15px;
+    }
+    .form2 button{
+        margin-left: 0px;
+        padding: 10px;
+        width: 100%;
+        font-size: 12px;
+    }
+    #logos {
+        font-size: 20px;
+        padding: 15px;
+        margin: 10px;
+        border-radius: 50%;
+    } 
+}
